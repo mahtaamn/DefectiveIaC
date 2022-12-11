@@ -1,0 +1,81 @@
+,repo_name,commit_sha,commit_msg,commit_html,file_name,file_status
+0,fuel-plugin-swift,6065d9162299ba8ad1cc45ff7b610d892ce2c6d3,"Add rebalance script and cron job
+
+  - $swift_nodes are only storage nodes now
+  - Haproxy on controller nodes has standalone swift as backend so standalone swift works out of box now
+  - Add configuration options to Fuel UI
+
+Change-Id: I30f2f4889b06f92d0b5ed4101beb6b794700d3d0",https://github.com/Mirantis/fuel-plugin-swift/commit/6065d9162299ba8ad1cc45ff7b610d892ce2c6d3,deployment_scripts/puppet/manifests/controller.pp,added
+1,fuel-plugin-swift,6065d9162299ba8ad1cc45ff7b610d892ce2c6d3,"Add rebalance script and cron job
+
+  - $swift_nodes are only storage nodes now
+  - Haproxy on controller nodes has standalone swift as backend so standalone swift works out of box now
+  - Add configuration options to Fuel UI
+
+Change-Id: I30f2f4889b06f92d0b5ed4101beb6b794700d3d0",https://github.com/Mirantis/fuel-plugin-swift/commit/6065d9162299ba8ad1cc45ff7b610d892ce2c6d3,deployment_scripts/puppet/manifests/rebalance_cronjob.pp,removed
+2,fuel-plugin-swift,6065d9162299ba8ad1cc45ff7b610d892ce2c6d3,"Add rebalance script and cron job
+
+  - $swift_nodes are only storage nodes now
+  - Haproxy on controller nodes has standalone swift as backend so standalone swift works out of box now
+  - Add configuration options to Fuel UI
+
+Change-Id: I30f2f4889b06f92d0b5ed4101beb6b794700d3d0",https://github.com/Mirantis/fuel-plugin-swift/commit/6065d9162299ba8ad1cc45ff7b610d892ce2c6d3,deployment_scripts/puppet/modules/standalone_swift/manifests/controller.pp,added
+3,fuel-plugin-swift,6065d9162299ba8ad1cc45ff7b610d892ce2c6d3,"Add rebalance script and cron job
+
+  - $swift_nodes are only storage nodes now
+  - Haproxy on controller nodes has standalone swift as backend so standalone swift works out of box now
+  - Add configuration options to Fuel UI
+
+Change-Id: I30f2f4889b06f92d0b5ed4101beb6b794700d3d0",https://github.com/Mirantis/fuel-plugin-swift/commit/6065d9162299ba8ad1cc45ff7b610d892ce2c6d3,deployment_scripts/puppet/modules/standalone_swift/manifests/init.pp,modified
+4,fuel-plugin-swift,48bc93d904474e1c711e83de1b74f5f7259df3db,"Merge branch 'experimental'
+
+Change-Id: I603e41c745e3ade5af9e206302932a1ec3d49a1e",https://github.com/Mirantis/fuel-plugin-swift/commit/48bc93d904474e1c711e83de1b74f5f7259df3db,deployment_scripts/puppet/manifests/site.pp,modified
+5,fuel-plugin-swift,48bc93d904474e1c711e83de1b74f5f7259df3db,"Merge branch 'experimental'
+
+Change-Id: I603e41c745e3ade5af9e206302932a1ec3d49a1e",https://github.com/Mirantis/fuel-plugin-swift/commit/48bc93d904474e1c711e83de1b74f5f7259df3db,deployment_scripts/puppet/modules/standalone_swift/manifests/init.pp,added
+6,fuel-plugin-swift,48bc93d904474e1c711e83de1b74f5f7259df3db,"Merge branch 'experimental'
+
+Change-Id: I603e41c745e3ade5af9e206302932a1ec3d49a1e",https://github.com/Mirantis/fuel-plugin-swift/commit/48bc93d904474e1c711e83de1b74f5f7259df3db,deployment_scripts/puppet/modules/standalone_swift/tests/init.pp,added
+7,fuel-plugin-swift,0d7ff2b7b2fe01236c398203ffd1c310fd3c6e82,"Configure swift draft site.pp
+
+  - So far does not work, installation relies on keystone configuration.
+  - Need to add swift, keystone puppet modules to the pugin.
+
+Add standalone_swift puppet module
+Improving init.pp
+
+  - Add filter_nodes_nonstrict function
+  - Move code from site.pp to init.pp in puppet module
+  - Fix problems in init.pp
+
+Change-Id: I32592477aa6a5466fd1e2b5e11dd214ba8a58f41",https://github.com/Mirantis/fuel-plugin-swift/commit/0d7ff2b7b2fe01236c398203ffd1c310fd3c6e82,deployment_scripts/puppet/manifests/site.pp,modified
+8,fuel-plugin-swift,0d7ff2b7b2fe01236c398203ffd1c310fd3c6e82,"Configure swift draft site.pp
+
+  - So far does not work, installation relies on keystone configuration.
+  - Need to add swift, keystone puppet modules to the pugin.
+
+Add standalone_swift puppet module
+Improving init.pp
+
+  - Add filter_nodes_nonstrict function
+  - Move code from site.pp to init.pp in puppet module
+  - Fix problems in init.pp
+
+Change-Id: I32592477aa6a5466fd1e2b5e11dd214ba8a58f41",https://github.com/Mirantis/fuel-plugin-swift/commit/0d7ff2b7b2fe01236c398203ffd1c310fd3c6e82,deployment_scripts/puppet/modules/standalone_swift/manifests/init.pp,added
+9,fuel-plugin-swift,0d7ff2b7b2fe01236c398203ffd1c310fd3c6e82,"Configure swift draft site.pp
+
+  - So far does not work, installation relies on keystone configuration.
+  - Need to add swift, keystone puppet modules to the pugin.
+
+Add standalone_swift puppet module
+Improving init.pp
+
+  - Add filter_nodes_nonstrict function
+  - Move code from site.pp to init.pp in puppet module
+  - Fix problems in init.pp
+
+Change-Id: I32592477aa6a5466fd1e2b5e11dd214ba8a58f41",https://github.com/Mirantis/fuel-plugin-swift/commit/0d7ff2b7b2fe01236c398203ffd1c310fd3c6e82,deployment_scripts/puppet/modules/standalone_swift/tests/init.pp,added
+10,fuel-plugin-swift,ffe35459068ef40e745b6c655930514a5bb83b26,Remove duplication,https://github.com/Mirantis/fuel-plugin-swift/commit/ffe35459068ef40e745b6c655930514a5bb83b26,deployment_scripts/puppet/manifests/site.pp,modified
+11,fuel-plugin-swift,d3590bb4fc027854719712aa35dd18521ce2a1dc,Add rebalance_cronjob.pp,https://github.com/Mirantis/fuel-plugin-swift/commit/d3590bb4fc027854719712aa35dd18521ce2a1dc,deployment_scripts/puppet/manifests/rebalance_cronjob.pp,added
+12,fuel-plugin-swift,bacc911d2dfd37d22ac790b5a086fa4fe1b11e19,Initial site.pp,https://github.com/Mirantis/fuel-plugin-swift/commit/bacc911d2dfd37d22ac790b5a086fa4fe1b11e19,deployment_scripts/puppet/manifests/site.pp,modified
+13,fuel-plugin-swift,cdb863325251eeb90078b4d0d976a4a7818f36e3,Update tasks.yaml,https://github.com/Mirantis/fuel-plugin-swift/commit/cdb863325251eeb90078b4d0d976a4a7818f36e3,deployment_scripts/puppet/manifests/site.pp,renamed
