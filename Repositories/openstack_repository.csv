@@ -1,3 +1,4 @@
+,name,fulName,id,total_count,iac_count,iacPercent,isCriteria2Met
 0,charm-cinder-infinidat,openstack/charm-cinder-infinidat,572776914,0,0,0,0
 1,openstack-ansible-os_skyline,openstack/openstack-ansible-os_skyline,572776897,0,0,0,0
 2,charm-manila-infinidat,openstack/charm-manila-infinidat,572776889,0,0,0,0

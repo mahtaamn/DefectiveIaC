@@ -5,10 +5,10 @@ import time
 
 
 headers = {
-    'Authorization': 'token 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'
+    'Authorization': 'token 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'
 }
 
-orgName = "openstack"
+orgName = "mirantis"
 df = pd.read_csv(f"{orgName}_repository.csv")
 #filter repos based on 11% pp condition;
 dfData = df['isCriteria2Met'] == 1
@@ -41,9 +41,9 @@ for index, repo in filteredData.iterrows():
     # for loop to get all commits in each repository
     for i, page in enumerate(pageCount):
 
-        if page > 10:
-            print("break from page*************,project:",repo['name'])
-            break
+        # if page > 10:
+        #     print("break from page*************,project:",repo['name'])
+        #     break
 
         print("repository name:", repo['name'], ",i*******", i,"page:",page)
 

@@ -1,12 +1,15 @@
 import pandas as pd
+import sys
 
 
-orgName = "mirantis"
+
+orgName = "openstack"
 df = pd.read_csv(f"{orgName}_repo_commit_withstats.csv")
 #filter repos based on 11% pp condition;
 dfData = df['isCriteria3Met'] == True
 filteredRepos = df[dfData]
 print("number of repositories that meet the 3rd criteria:", len(filteredRepos))
+#print(filteredRepos)
 # make sure indexes pair with number of rows
 filteredData = filteredRepos.reset_index()
 
@@ -27,6 +30,6 @@ for index, repo in filteredData.iterrows():
     #print("average_iac_change_rate:",repo['average_iac_change_rate'])
 finalAverage = round(sumAvgCount/len(filteredRepos),2)
 print("finalAverage:",finalAverage)
-# print("numberOfAllCommits:",numberOfAllCommits)
-# print("numberOfIACCommits:",numberOfIACCommits)
-# print("numberofIACScripts:",numberofIACScripts)
+print("numberOfAllCommits:",numberOfAllCommits)
+print("numberOfIACCommits:",numberOfIACCommits)
+print("numberofIACScripts:",numberofIACScripts)

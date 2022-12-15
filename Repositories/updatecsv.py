@@ -1,9 +1,24 @@
 from tempfile import NamedTemporaryFile
 import shutil
 import csv
+import sys
+import pandas as pd
 
-orgName = "openstack"
+orgName = "wikimedia"
 filename = f"{orgName}_repository.csv"
+#filter repos based on 11% pp condition;
+df = pd.read_csv(filename)
+
+dfData = df['isCriteria2Met'] == 1
+filteredRepos = df[dfData]
+print("number of repositories with at least 11% pp files:", len(filteredRepos))
+# for row in filteredRepos:
+#     print(row['name'])
+
+
+sys.exit()
+
+
 tempfile = NamedTemporaryFile(mode='w', delete=False)
 
 fields = ['number', 'name', 'fulname', 'id','total_count','iac_count','iacPercent','isCriteria2Met']

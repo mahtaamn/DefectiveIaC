@@ -1,0 +1,15 @@
+,repo_name,first_commit_date,last_commit_date,commits_count,numOfMonths,is_repo_valid
+0,operations-debs-python-anycast-healthchecker,2014-10-27 15:39:52+00:00,2019-02-07 21:40:17+00:00,394,53,True
+1,operations-puppet-mesos,2013-04-17 07:53:54+00:00,2015-04-27 08:30:08+00:00,225,25,True
+2,operations-puppet-cassandra,2014-10-15 21:27:38+00:00,2015-06-19 01:19:53+00:00,27,9,True
+3,operations-puppet-mariadb,2014-03-26 03:37:10+00:00,2017-03-07 15:35:27+00:00,97,37,True
+4,operations-puppet-wikimetrics,2014-01-20 22:39:19+00:00,2017-12-03 00:16:35+00:00,50,48,False
+5,puppet-kafka,2013-02-22 02:30:47+00:00,2017-02-17 16:52:33+00:00,73,49,False
+6,analytics-vagrant-build,2013-05-14 19:49:12+00:00,2013-05-27 09:37:22+00:00,3,1,True
+7,analytics-vagrant-kraken,2013-04-25 15:27:56+00:00,2013-07-08 15:06:40+00:00,16,4,True
+8,operations-puppet-cdh4,2012-10-02 20:12:35+00:00,2017-02-17 16:52:29+00:00,132,53,True
+9,puppet,2011-09-07 22:18:07+00:00,2022-12-12 13:33:49+00:00,94281,136,True
+10,mediawiki-vagrant,2012-10-16 20:57:17+00:00,2022-12-06 10:45:25+00:00,3094,123,True
+11,puppet-storm,2012-11-26 21:36:44+00:00,2013-02-14 19:16:04+00:00,12,4,True
+12,kraken-puppet,2012-05-24 16:09:56+00:00,2012-11-29 19:28:32+00:00,281,7,True
+13,puppet-kafka-0.7.2,2012-10-25 19:26:21+00:00,2012-12-20 16:08:01+00:00,14,3,True
